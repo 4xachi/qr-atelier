@@ -124,7 +124,7 @@ export function LiveCanvasStage() {
               className={`rounded-md px-2 py-1 whitespace-nowrap ${surfaceMat === 'light' ? 'bg-white text-slate-900 shadow-xs' : 'text-slate-600'
                 }`}
             >
-              Light
+              Light Mat
             </button>
             <button
               type="button"
@@ -132,7 +132,7 @@ export function LiveCanvasStage() {
               className={`rounded-md px-2 py-1 whitespace-nowrap ${surfaceMat === 'dark' ? 'bg-slate-800 text-white shadow-xs' : 'text-slate-600'
                 }`}
             >
-              Dark
+              Dark Mat
             </button>
           </div>
 
@@ -160,10 +160,10 @@ export function LiveCanvasStage() {
         data-testid="qr-preview-stage"
         data-payload-valid={payloadResult.valid}
         className={`relative flex min-h-[460px] flex-col items-center justify-center rounded-xl border border-slate-200 p-6 sm:p-10 transition-colors ${surfaceMat === 'dark'
-            ? 'bg-slate-900'
-            : designConfig.background.transparent
-              ? 'checkerboard-bg'
-              : 'studio-grid-bg'
+          ? 'bg-slate-900'
+          : designConfig.background.transparent
+            ? 'checkerboard-bg'
+            : 'studio-grid-bg'
           }`}
       >
         {!payloadResult.valid ? (
