@@ -1,0 +1,6 @@
+{
+  "name": "QR Atelier",
+  "description": "A free, browser-first QR code design studio with brand-aware customization, live editing, scan verification, and professional exports.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
