@@ -121,20 +121,18 @@ export function LiveCanvasStage() {
             <button
               type="button"
               onClick={() => setSurfaceMat('light')}
-              className={`rounded-md px-2 py-1 whitespace-nowrap ${
-                surfaceMat === 'light' ? 'bg-white text-slate-900 shadow-xs' : 'text-slate-600'
-              }`}
+              className={`rounded-md px-2 py-1 whitespace-nowrap ${surfaceMat === 'light' ? 'bg-white text-slate-900 shadow-xs' : 'text-slate-600'
+                }`}
             >
-              Light Mat
+              Light
             </button>
             <button
               type="button"
               onClick={() => setSurfaceMat('dark')}
-              className={`rounded-md px-2 py-1 whitespace-nowrap ${
-                surfaceMat === 'dark' ? 'bg-slate-800 text-white shadow-xs' : 'text-slate-600'
-              }`}
+              className={`rounded-md px-2 py-1 whitespace-nowrap ${surfaceMat === 'dark' ? 'bg-slate-800 text-white shadow-xs' : 'text-slate-600'
+                }`}
             >
-              Dark Mat
+              Dark
             </button>
           </div>
 
@@ -161,13 +159,12 @@ export function LiveCanvasStage() {
       <div
         data-testid="qr-preview-stage"
         data-payload-valid={payloadResult.valid}
-        className={`relative flex min-h-[460px] flex-col items-center justify-center rounded-xl border border-slate-200 p-6 sm:p-10 transition-colors ${
-          surfaceMat === 'dark'
+        className={`relative flex min-h-[460px] flex-col items-center justify-center rounded-xl border border-slate-200 p-6 sm:p-10 transition-colors ${surfaceMat === 'dark'
             ? 'bg-slate-900'
             : designConfig.background.transparent
-            ? 'checkerboard-bg'
-            : 'studio-grid-bg'
-        }`}
+              ? 'checkerboard-bg'
+              : 'studio-grid-bg'
+          }`}
       >
         {!payloadResult.valid ? (
           <div className="max-w-xs rounded-xl border border-red-200 bg-white p-5 text-center">
@@ -193,9 +190,8 @@ export function LiveCanvasStage() {
               className="h-auto w-[300px] sm:w-[350px] max-w-full rounded-lg"
             />
             <div
-              className={`mt-4 flex items-center gap-2 text-[11px] font-medium ${
-                surfaceMat === 'dark' ? 'text-slate-300' : 'text-slate-500'
-              }`}
+              className={`mt-4 flex items-center gap-2 text-[11px] font-medium ${surfaceMat === 'dark' ? 'text-slate-300' : 'text-slate-500'
+                }`}
             >
               <span>Template: {activePreset.name}</span>
               <span aria-hidden="true">·</span>
